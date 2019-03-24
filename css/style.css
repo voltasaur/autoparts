@@ -29,6 +29,16 @@ body {
   color: #262626;
 }
 
+.button-o {
+  border: 2px solid #507fe1;
+  padding: 17px 22px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #507fe1;
+  background: none;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
 .navbar-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,10 +50,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 80px;
-}
-
-.navbar__menu-button {
-  margin-right: 30px;
 }
 
 .navbar__mobile, .navbar__landline {
