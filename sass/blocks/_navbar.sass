@@ -1,13 +1,19 @@
 .navbar
-  &-wrap 
+  position: relative
+  left: 0
+  top: 0
+  widht: 100%
+  background-color: #ffffff
+  &__wrap 
     display: flex
     align-items: center
     justify-content: space-between
     min-height: 80px
-    //border: 1px solid red
+    // border: 1px solid red
 
   &__mobile, &__landline
     text-align: right
+
   &__phone 
     display: block
     margin-bottom: 5px
@@ -15,6 +21,7 @@
     +bold
     text-decoration: none 
     color: $text-color
+    
   &__small-text
     display: block
     font-size: 14px
