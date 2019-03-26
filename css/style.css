@@ -8,6 +8,25 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+
 @font-face {
   font-family: 'Proxima Nova Semibold';
   src: url("../fronts/ProximaNova-Semibold.eot");
@@ -35,8 +54,14 @@ body {
   font-size: 12px;
   text-transform: uppercase;
   color: #507fe1;
-  background: none;
+  background: #ffffff;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 550px) {
+  .button-o {
+    front-size: 10px;
+  }
 }
 
 .button {
@@ -105,8 +130,8 @@ body {
 }
 
 .menu_active {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
 }
 
 .menu__nav {
@@ -171,10 +196,39 @@ body {
   color: #7b7b7b;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile, .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo {
+    display: none;
+  }
+  .menu {
+    top: 70px;
+  }
+  .menu-button {
+    height: 60px;
+  }
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__link {
+    margin: 20px 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
 .hero {
   background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 70px;
   background-size: contain;
-  padding-top: 10%;
+  padding-top: 200px;
   padding-bottom: 100%;
 }
 
@@ -188,5 +242,12 @@ body {
   margin-bottom: 67px;
   font-size: 30px;
   font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: cover;
+    background-position: top left 35%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
