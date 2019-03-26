@@ -49,10 +49,10 @@ body {
 }
 
 .navbar {
-  position: relative;
-  left: 0;
+  position: fixed;
   top: 0;
-  widht: 100%;
+  left: 0;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -87,6 +87,44 @@ body {
   font-size: 14px;
   color: #7b7b7b;
   text-decoration: none;
+}
+
+.menu {
+  position: fixed;
+  z-index: 0;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  padding: 16px 0;
+  background-color: #507fe1;
+  color: #ffffff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.menu_active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+
+.menu__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu__link {
+  text-decoration: none;
+  front-size: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .menu-button {
@@ -134,9 +172,9 @@ body {
 }
 
 .hero {
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top;
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top 70px;
   background-size: contain;
-  padding-top: 5%;
+  padding-top: 10%;
   padding-bottom: 100%;
 }
 
